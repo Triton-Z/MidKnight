@@ -1,3 +1,11 @@
-const ctx = document.getElementById("ctx");
-ctx.style.width = window.innerWidth + "px";
-ctx.style.height = window.innerHeight + "px";
+gameArea.start();
+
+var gameArea = {
+  canvas : document.createElement("canvas"),
+  start : function() {
+    this.canvas.width = window.innerWidth;
+    this.canvas.height = window.innerHeight;
+    this.context = this.canvas.getContext("2d");
+    document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+  }
+}
