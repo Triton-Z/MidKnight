@@ -1,17 +1,3 @@
-const canvas = (w, l) =>
-{
-  for (let y = 0; y < l; y++)
-  {
-    for (let x = 0; x < w; x++)
-    {
-      const span = document.createElement("span");
-      span.innerHTML = "E";
-      span.id = `${x} ${y}`;
-      document.body.appendChild(span);
-    }
-    const br = document.createElement("br");
-    document.body.appendChild(br);
-  }
-}
+const canvas=(e,n)=>{for(let t=0;t<n;t++){for(let l=0;l<e;l++){let a=document.createElement("span");a.innerHTML="E",a.id=`${l} ${t}`,document.body.appendChild(a)}let d=document.createElement("br");document.body.appendChild(d)}};
 
 window.onload = canvas(200, 200);
