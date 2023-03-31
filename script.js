@@ -1,11 +1,12 @@
 const canvas = (w, l) =>
 {
-  for (let i = 0; i < l; i++)
+  for (let y = 0; y < l; y++)
   {
-    for (let j = 0; j < w; j++)
+    for (let x = 0; x < w; x++)
     {
       const span = document.createElement("span");
       span.innerHTML = "E";
+      span.id = `${x} ${y}`;
       document.body.appendChild(span);
     }
     const br = document.createElement("br");
