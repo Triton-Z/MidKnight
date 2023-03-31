@@ -1,11 +1,16 @@
-gameArea.start();
-
-var gameArea = {
-  canvas : document.createElement("canvas"),
-  start : function() {
-    this.canvas.width = window.innerWidth;
-    this.canvas.height = window.innerHeight;
-    this.context = this.canvas.getContext("2d");
-    document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+const canvas = (w, l) =>
+{
+  for (let i = 0; i < l; i++)
+  {
+    for (let j = 0; j < w; j++)
+    {
+      const span = document.createElement("span");
+      span.innerHTML = "E";
+      document.body.appendChild(span);
+    }
+    const br = document.createElement("br");
+    document.body.appendChild(br);
   }
 }
+
+window.onload = canvas(200, 200);
