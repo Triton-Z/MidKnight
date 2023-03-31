@@ -3,4 +3,6 @@ body
  background-color:black; 
  margin: 0;
  overflow: hidden;
+ font-size: 10px;
+ font-family: monospace;
 }
