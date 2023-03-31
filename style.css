@@ -4,8 +4,3 @@ body
  margin: 0;
  overflow: hidden;
 }
-
-#ctx
-{
-  border:2px solid white; 
-}
