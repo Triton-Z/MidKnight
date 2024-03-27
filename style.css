@@ -1,8 +1,10 @@
-body
-{
- background-color:black; 
- margin: 0;
- overflow: hidden;
- font-size: 10px;
- font-family: monospace;
+* { 
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+canvas {
+  background: black;
+  image-rendering: optimizeSpeed;
 }
